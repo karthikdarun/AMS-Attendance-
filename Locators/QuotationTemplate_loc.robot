@@ -1,0 +1,28 @@
+
+*** Variables ***
+${quotationTemplateMenu}    xpath://*[contains(text(),' Quotation Template')]
+${QT_addbn}    xpath://*[@id='btnAddTemplate']
+${QT_name_loc}    xpath://*[@id='txtTemplateName']
+${QT_txtAttnHeader_loc}    xpath://*[@id='txtAttnHeader']
+${QT_attendetail_loc}    xpath://*[@id='txtAttnDetail']
+${QT_RegHeader_loc}    xpath://*[@id='txtRegHeader']
+${QT_RegDetail_loc}    xpath://*[@id='txtRegDetail']
+${QT_QuoationFrom_loc}    xpath://*[@id='txtQuotationFrom']
+${QT_Quotationworker_loc}    xpath://*[@id='txtQuotationWorker']
+${QT_JobHeader_loc}    xpath://*[@id='txtJobHeader']
+${QT_JobDetail_loc}    xpath://*[@id='txtJobDetail']
+${QT_AddJobGrid}    xpath://*[@id='btnAddTemplateJobgrid']
+${QT_TermHeader_loc}    xpath://*[@id='txtPaymentHeader']
+${QT_TermDetail_loc}    xpath://*[@id='txtPaymentDetail']
+${QT_AddTermbn}    xpath://*[@id='btnAddTemplatePayment']
+${QT_Footer1_loc}    xpath://*[@id='txtQuotationFooter1']
+${QT_Footer2_loc}    xpath://*[@id='txtQuotationFooter2']
+${QT_Footer3_loc}    xpath://*[@id='txtQuotationFooter3']
+${QT_Footer4_loc}    xpath://*[@id='txtQuotationFooter4']
+${QT_Footer5_loc}    xpath://*[@id='txtQuotationFooter5']
+${QT_Savebn}    xpath://*[@id='btnSaveTemplate']
+${QT_TemplateNameInSearch_loc}    xpath://*[@id='txtSearchTemplateName']
+${QT_Searchbn}    xpath://*[@id='btnTemplateSearch']
+${QT_TemplateNameInView_loc}    xpath://*[@id='Templategrid']/tbody/tr/td[3]
+
+
