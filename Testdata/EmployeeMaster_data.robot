@@ -1,7 +1,7 @@
 *** Variables ***
-${EM_firstname_data}    Anderson 
+${EM_firstname_data}    Sanjay
 ${EM_lastname_data}    Test
-${EM_EEFullName}    Anderson Test    
+${EM_EEFullName}    Sanjay Test    
 ${EM_DOB_data}    01-01-1987
 ${EM_Nationality_data}    Singaporean    
 ${EM_EmployType_data}    Electrician Worker    
@@ -33,8 +33,8 @@ ${EM_EmployeeNameInSearch_data}    ${EM_EEFullName}
 ${EM_EmployeeNameInGrid_data}    ${EM_EEFullName}
 
 
-${EM_PassportNumber_data}    PP_005   
-${EM_PassportName_data}    PassTest_005    
+${EM_PassportNumber_data}    PP_505   
+${EM_PassportName_data}    PassTest_505    
 ${EM_CountryIssue_data}    India    
 ${EM_PlaceOfIssue_data}    Delhi    
 ${EM_DOI_data}    01-Jan-2020    
@@ -43,8 +43,8 @@ ${EM_PassportAddress_data}    155 First Main Street,Delhi, India
 ${EM_VerifyPassportNumber_data}    ${EM_PassportNumber_data}        
 
 ${EM_PassType_data}    S pass    
-${EM_PassFINNumber_data}    FIN_005    
-${EM_WorkPassNumber_data}    WKPass_005  
+${EM_PassFINNumber_data}    FIN_505    
+${EM_WorkPassNumber_data}    WKPass_505 
 ${EM_PassDOI_data}    10-Mar-2020    
 ${EM_PassDOE_data}    25-Feb-2021 
 ${EM_VerifyworkPassdetails_data}    ${EM_PassType_data}    
@@ -65,7 +65,7 @@ ${EM_ContactAddress3_data}    478965
 ${EM_HomeAddress1_data}    124    
 ${EM_HomeAddress2_data}    12    
 ${EM_HomeAddress3_data}    478965    
-${EM_ContactPersonName_data}    Rafael    
+${EM_ContactPersonName_data}    Sanjay    
 ${EM_ContactPersonMob_data}    45698523    
 ${EM_ContactPersonEmail_data}    Rafael@gmail.com    
 ${EM_ContactPersonAddress1_data}    111    

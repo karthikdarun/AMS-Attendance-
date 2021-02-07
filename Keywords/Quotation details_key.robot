@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary    
+Library    SeleniumLibrary
+Library    DatabaseLibrary        
 Resource    ../Locators/Common_loc.robot
 Resource    ../Testdata/Common_data.robot
 Resource    ../Testdata/QuotationDetails_data.robot
@@ -33,6 +34,8 @@ Adding quotation details
    Click Element    ${QD_Savebn}
    Click Element    ${Okbutton}    
    Sleep    ${minWait}
+   
+   
    Select From List By Label    ${QD_quotationYearInSearch_loc}    ${QD_quotationYearInSearch_data}
    Select From List By Label    ${QD_CompanyNameInSearch_loc}    ${QD_CompanyNameInSearch_data}
    Input Text    ${QD_quotationNumberInSearch_loc}    ${GetQuotationNo}    
@@ -42,6 +45,7 @@ Adding quotation details
    Sleep    ${minWait}   
    Click Element    ${QD_Additionalinfo} 
    Sleep    ${minWait}
+   
     
       
    Select From List By Label    ${QD_QuotationRevisionNumber_loc}    ${QD_QuotationRevisionNo}
@@ -78,7 +82,7 @@ Adding quotation details
    Sleep    ${minWait} 
    Click Element    ${QD_Approvebn}
    Click Element    ${Okbutton}        
-   Sleep    ${minWait}
+   Sleep    ${maxWait}
    Element Text Should Be    ${QD_VerifyApproveStatus_loc}    ${QD_VerifyApproveStatus_data}
    Sleep    ${minWait}
    Click Element    ${Logout1_loc}    

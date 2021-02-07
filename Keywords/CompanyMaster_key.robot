@@ -1,12 +1,14 @@
 *** Settings ***
 
-Library    SeleniumLibrary    
+Library    SeleniumLibrary
+Library    DatabaseLibrary        
 Resource    ../Testdata/CompanyMaster_data.robot
 Resource    ../Locators/CompanyMaster_loc.robot
 Resource    ../Locators/Common_loc.robot
 Resource    ../Testdata/Common_data.robot
 
 *** Keywords ***
+
 
 Add Company in Company Master
     Click Element    ${CompanyMaster_menu}
@@ -24,7 +26,7 @@ Add Company in Company Master
     Input Text    ${CM_Address3_loc}    ${CM_Address3_data}    
     Input Text    ${CM_BillingAddress1_loc}    ${CM_BillingAddress1_data}    
     Input Text    ${CM_BillingAddress2_loc}    ${CM_BillingAddress2_data}    
-    Input Text    ${CM_BillingAddress3_loc}    text       
+    Input Text    ${CM_BillingAddress3_loc}    ${CM_BillingAddress3_data}     
         
     Click Element    ${CM_SaveBn}    
     Click Element    ${Okbutton}
@@ -57,4 +59,6 @@ Add Company in Company Master
     Sleep    ${minWait}
     Click Element    ${Logout2_loc} 
     Sleep    ${minWait}
-    Close Browser      
+    Close Browser   
+    
+     

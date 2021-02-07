@@ -30,7 +30,7 @@ ${ID_Invoicemonthepickerbn}    xpath://*[@id='TxtInvoicMonth']/parent::div/span/
 ${ID_InvoiceDatepickerbn}    xpath://*[@id='TxtInvoiceDate']/parent::div/span/button
 ${ID_InvoicedateSelect_loc}    xpath://*[@day='${ID_InvoiceDate_data}']
 
-${ID_Actionbn}    xpath://*[@id='Invoicegrid']/tbody/tr/td[8]
+${ID_Actionbn}    xpath://*[@id='Invoicegrid']/tbody/tr/td[9]
 ${ID_EmployeeInCompanyAttendance_loc}    xpath://*[@id='DdlEmployeeName']
 ${ID_Companyattendancebn}    xpath:(//*[contains(text(),'Company Attendance')])[2]
 ${ID_CompanyEmployeeNameInView_loc}    xpath://*[@id='DdlEmployeeNameSearch']

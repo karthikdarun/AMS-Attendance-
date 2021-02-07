@@ -4,18 +4,18 @@ Resource    QuotationDetails_data.robot
 Resource    EmployeeMaster_data.robot
 Resource    ../Keywords/Quotation details_key.robot
 *** Variables ***
-${ID_InvoiceMonth_data}    Jan/2021    
+${ID_InvoiceMonth_data}    Feb/2021    
 ${ID_InvoiceDate_data}    15    
 ${ID_CompanyName_data}    ${CM_Companyname_data}    
-${ID_InvoiceQuotationNo_data}    QUO-JAN2021/0008   
+${ID_InvoiceQuotationNo_data}    QUO-FEB2021/0004 
 ${ID_Project_data}    ${CM_Project_data}    
 ${ID_Site_data}    ${CM_Site_data}   
-${ID_PreparedBy_data}    karthik Test    
+${ID_PreparedBy_data}    Karthik TestUser    
 ${ID_ContractType_data}    ${QD_ContractType_data}    
-${ID_InvoiceRemarks_data}    January invoice    
+${ID_InvoiceRemarks_data}    February invoice    
         
 ${ID_SupplierCompanyName_data}    ${ID_CompanyName_data}    
-${ID_SupplierInvoiceDate_data}    15-Jan-2021    
+${ID_SupplierInvoiceDate_data}    15-Feb-2021    
 ${ID_SupplierInvoiceRefNo_data}    123456    
 ${ID_SupplierInvoiceSubmittedBy_data}    Karthik    
 ${ID_SupplierInvoiceContractType_data}    Hourly Contract 

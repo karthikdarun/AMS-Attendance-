@@ -62,9 +62,11 @@ Add Quotation Template
     Click Element    ${Okbutton}    
     Sleep    ${maxWait}
     Click Element    ${UM_backbutton_loc}    
+    Sleep    ${maxWait}
+    Execute Javascript    window.scrollBy(-900,-900)
     Sleep    ${minWait}
     Input Text    ${QT_TemplateNameInSearch_loc}    ${QT_TemplateNameInSearch_data}
-    Sleep    ${minWait}    
+    Sleep    ${maxWait}    
     Click Element    ${QT_Searchbn}
     Sleep    ${minWait}
     Element Text Should Be    ${QT_TemplateNameInView_loc}    ${QT_TemplateNameInView_data} 

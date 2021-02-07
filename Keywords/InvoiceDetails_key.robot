@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary 
-Library    Collections       
+Library    Collections
+Library    DatabaseLibrary      
 Resource    ../Locators/Common_loc.robot
 Resource    ../Testdata/Common_data.robot
 Resource    ../Locators/InvoiceDetails_loc.robot
@@ -28,30 +29,40 @@ Adding Invoice details
     Click Element    ${ID_InvoicedateSelect_loc}    
     Sleep    ${minWait}    
     Select From List By Label    ${ID_CompanyName_loc}    ${ID_CompanyName_data}
+    Sleep    ${minWait}
     Select From List By Label    ${ID_InvoiceQuotationNo_loc}    ${ID_InvoiceQuotationNo_data}
+    Sleep    ${minWait}
     Select From List By Label    ${ID_Project_loc}    ${ID_Project_data}
+    Sleep    ${minWait}
     Select From List By Label    ${ID_Site_loc}    ${ID_Site_data}
+    Sleep    ${minWait}
     Select From List By Label    ${ID_PreparedBy_loc}    ${ID_PreparedBy_data}
+    Sleep    ${minWait}
     Select From List By Label    ${ID_ContractType_loc}    ${ID_ContractType_data}
+    Sleep    ${minWait}
     Input Text    ${ID_InvoiceRemarks_loc}    ${ID_InvoiceRemarks_data}
     Select From List By Label    ${ID_SupplierCompanyName_loc}    ${ID_SupplierCompanyName_data}
+    Sleep    ${minWait}
     Input Text    ${ID_SupplierInvoiceDate_loc}    ${ID_SupplierInvoiceDate_data}    
     Input Text    ${ID_SupplierInvoiceRefNo_loc}    ${ID_SupplierInvoiceRefNo_data}    
     Input Text    ${ID_SupplierInvoiceSubmittedBy_loc}    ${ID_SupplierInvoiceSubmittedBy_data}    
     Select From List By Label    ${ID_SupplierInvoiceContractType_loc}    ${ID_SupplierInvoiceContractType_data}
-    Click Element    ${ID_Savebn}    
+    Sleep    ${minWait}
+    Click Element    ${ID_Savebn}
+    Sleep    ${minWait}    
     Click Element    ${Okbutton}    
-    Sleep    ${minWait}
-    
+    Sleep    ${minWait}    
     Select From List By Label    ${ID_InvoiceYearInSearch_loc}    ${ID_InvoiceYearInSearch_data}
-    Select From List By Label    ${ID_CompanyNameInSearch_loc}    ${ID_CompanyNameInSearch_data}
-    Input Text    ${ID_InvoiceNoInSearch_loc}    ${InvoiceNumber}
-    Click Element    ${ID_Searchbn}    
     Sleep    ${minWait}
-    
+    Select From List By Label    ${ID_CompanyNameInSearch_loc}    ${ID_CompanyNameInSearch_data}
+    Sleep    ${minWait}
+    Input Text    ${ID_InvoiceNoInSearch_loc}    ${InvoiceNumber}
+    Sleep    ${minWait}
+    Click Element    ${ID_Searchbn}    
+    Sleep    ${maxWait}  
     
     Click Element    ${ID_Actionbn}
-    Sleep    ${minWait}
+    Sleep    ${maxWait}
     Click Element    ${ID_Supplierattendancebn}
     Sleep    ${minWait}
     Select From List By Label    ${ID_SupplierEmployeeName_loc}    ${ID_SupplierEmployeeName_data}
@@ -117,12 +128,16 @@ Adding Invoice details
     END 
     Sleep    ${maxWait}
     Click Element    ${UM_backbutton_loc}
-    Sleep    ${minWait}
+    Sleep    ${maxWait}
     Click Element    ${Logout1_loc}    
     Sleep    ${minWait}
     Click Element    ${Logout2_loc} 
     Sleep    ${minWait}
-    Close Browser                                  
+    Close Browser
+    
+        
+    
+                                      
     
                                    
     
