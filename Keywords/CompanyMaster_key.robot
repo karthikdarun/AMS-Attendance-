@@ -40,7 +40,7 @@ Add Company in Company Master
     Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
     Sleep    ${minWait}
     Click Element    ${CM_ActionBn}    
-    Sleep    ${minWait}
+    Wait Until Element Is Visible    ${CM_CompanyInfobn}    
     Click Element    ${CM_CompanyInfobn}    
     Sleep    ${minWait}
     Input Text    ${CM_ProjectName_loc}    ${CM_Project_data}
