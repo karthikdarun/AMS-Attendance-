@@ -22,7 +22,8 @@ Add user
     Sleep    ${minWait}  
     Mouse Down    ${UM_SelectLang_loc}
     Click Element    ${UM_SelectLang_loc}    
-    Click Element    ${UM_MaleGender_loc} 
+    Click Element    ${UM_MaleGender_loc}
+    Sleep    ${minWait} 
     Click Element    ${UM_saveButton}
     Sleep    ${minWait}
     Click Element    ${Okbutton} 

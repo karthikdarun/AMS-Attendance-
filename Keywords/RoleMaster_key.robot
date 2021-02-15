@@ -17,7 +17,8 @@ Add Role
     Click Element    ${Okbutton}
     Sleep    ${maxWait} 
     Click Element    ${UM_backbutton_loc} 
-    Sleep    ${minWait}      
+    Sleep    ${maxWait} 
+    sleep   ${minWait}     
     Input Text    ${RM_RolenameInSearch_loc}    ${RM_RolenameInSearch_data}    
     Click Element    ${RM_searchbutton} 
     Sleep    ${maxWait}   

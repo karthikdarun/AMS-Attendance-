@@ -2,7 +2,9 @@
 Library    SeleniumLibrary    
 Library    DatabaseLibrary    
 Library    OperatingSystem 
-Resource    ../Testdata/Common_data.robot   
+Resource    ../Testdata/Common_data.robot
+Resource    ../Testdata/RoleMaster_data.robot 
+Resource    ../Testdata/UserMaster_data.robot  
 
 *** Variables ***
 ${DBName}    DB_9B4693_MCQ    
@@ -179,22 +181,22 @@ Delete the record from TblExpensesDetails
     
 Delete the record from TblUserMaster
     
-    ${TblUserMaster}    Query    select top 1 userid from tblusermaster order by createddate desc
-    Sleep     ${minWait}
-    ${TblUserMaster_DBValue}=    Set Variable    ${TblUserMaster[0][0]}
-    Log To Console    ${TblUserMaster_DBValue}     
+    # ${TblUserMaster}    Query    select top 1 userid from tblusermaster order by createddate desc
+    # Sleep     ${minWait}
+    # ${TblUserMaster_DBValue}=    Set Variable    ${TblUserMaster[0][0]}
+    # Log To Console    ${TblUserMaster_DBValue}     
     Sleep    ${minWait}  
-    Execute Sql String    delete from TblUserMaster where userid = ${TblUserMaster_DBValue} 
+    Execute Sql String    delete from TblUserMaster where userid = ${UM_LoginName_data} 
     
 Delete the record from TblRoleMaster
     
-    ${TblRoleMaster}    Query    select top 1 roleid from tblrolemaster order by createddate desc
-    Sleep     ${minWait}
-    ${TblRoleMaster_SetValue}=    Set Variable    ${TblRoleMaster[0][0]}
-    ${TblRoleMaster_DBValue}=    Set Variable    '${TblRoleMaster_SetValue}'    
-    Log To Console    ${TblRoleMaster_DBValue}     
+    # ${TblRoleMaster}    Query    select top 1 roleid from tblrolemaster order by createddate desc
+    # Sleep     ${minWait}
+    # ${TblRoleMaster_SetValue}=    Set Variable    ${TblRoleMaster[0][0]}
+    # ${TblRoleMaster_DBValue}=    Set Variable    '${TblRoleMaster_SetValue}'    
+    # Log To Console    ${TblRoleMaster_DBValue}     
     Sleep    ${minWait}  
-    Execute Sql String    delete from TblRoleMaster where RoleID = ${TblRoleMaster_DBValue}
+    Execute Sql String    delete from TblRoleMaster where RoleName = ${RM_Rolename_data}
     
 Disconnect the database
     Disconnect From Database 

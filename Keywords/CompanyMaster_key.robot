@@ -27,7 +27,7 @@ Add Company in Company Master
     Input Text    ${CM_BillingAddress1_loc}    ${CM_BillingAddress1_data}    
     Input Text    ${CM_BillingAddress2_loc}    ${CM_BillingAddress2_data}    
     Input Text    ${CM_BillingAddress3_loc}    ${CM_BillingAddress3_data}     
-        
+    Sleep    ${maxWait}   
     Click Element    ${CM_SaveBn}    
     Click Element    ${Okbutton}
     Sleep    ${minWait}
