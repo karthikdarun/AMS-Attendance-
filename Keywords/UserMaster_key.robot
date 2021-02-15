@@ -35,7 +35,8 @@ Add user
     Sleep    ${minWait}
     Click Element    ${UM_searchbutton}    
     Sleep    ${maxWait}
-    Element Text Should Be    ${UM_loginNameInGrid_loc}    ${UM_loginNameInGrid_data}
+    Table Column Should Contain    ${UM_loginNameInGrid_loc}    3    ${UM_loginNameInGrid_data}    
+    # Element Text Should Be    ${UM_loginNameInGrid_loc}    ${UM_loginNameInGrid_data}
     Sleep    ${minWait}
     Click Element    ${Logout1_loc}    
     Sleep    ${minWait}
