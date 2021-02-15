@@ -20,7 +20,7 @@ Adding Expenses
     Input Text    ${ED_Desc_loc}    ${ED_Desc_data}
     Click Element    ${ED_date_loc} 
     
-    Wait Until Element Is Visible    ${ED_Savebn}    
+    Wait Until Page Contains Element    ${ED_Savebn}    
     Click Element    ${ED_Savebn}    
     Sleep    ${minWait}
     Click Element    ${Okbutton}
