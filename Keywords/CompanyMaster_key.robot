@@ -26,8 +26,9 @@ Add Company in Company Master
     Input Text    ${CM_Address3_loc}    ${CM_Address3_data}    
     Input Text    ${CM_BillingAddress1_loc}    ${CM_BillingAddress1_data}    
     Input Text    ${CM_BillingAddress2_loc}    ${CM_BillingAddress2_data}    
-    Input Text    ${CM_BillingAddress3_loc}    ${CM_BillingAddress3_data}     
-    Sleep    ${maxWait}   
+    Input Text    ${CM_BillingAddress3_loc}    ${CM_BillingAddress3_data}
+    Execute Javascript    window.scrollBy(900,900)     
+    Sleep    ${minWait}   
     Click Element    ${CM_SaveBn}    
     Click Element    ${Okbutton}
     Sleep    ${minWait}

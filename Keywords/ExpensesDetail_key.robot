@@ -19,7 +19,8 @@ Adding Expenses
     Input Text    ${ED_Paidby_loc}    ${ED_Paidby_data}    
     Input Text    ${ED_Desc_loc}    ${ED_Desc_data}
     Click Element    ${ED_date_loc} 
-    Sleep    ${minWait}
+    
+    Wait Until Element Is Visible    ${ED_Savebn}    
     Click Element    ${ED_Savebn}    
     Sleep    ${minWait}
     Click Element    ${Okbutton}

@@ -23,6 +23,7 @@ Add user
     Mouse Down    ${UM_SelectLang_loc}
     Click Element    ${UM_SelectLang_loc}    
     Click Element    ${UM_MaleGender_loc}
+    Execute Javascript    window.scrollBy(900,900)
     Sleep    ${minWait} 
     Click Element    ${UM_saveButton}
     Sleep    ${minWait}
