@@ -39,10 +39,12 @@ Add Company in Company Master
     Sleep    ${minWait}
     Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
     Sleep    ${minWait}
-    Click Element    ${CM_ActionBn}    
-    Wait Until Page Contains Element    ${CM_CompanyInfobn}    
+    Click Element    ${CM_ActionBn}
+    Switch Window    xpath://*[starts-with(@id,'popover')]       
+    Wait Until Element Is Visible    ${CM_CompanyInfobn}    
     Click Element    ${CM_CompanyInfobn}    
     Sleep    ${minWait}
+    # Close Window
     Input Text    ${CM_ProjectName_loc}    ${CM_Project_data}
     Click Element    ${CM_ProjectSavebn}    
     Click Element    ${Okbutton}    
