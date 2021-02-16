@@ -41,9 +41,10 @@ Add Company in Company Master
     # Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
     # Sleep    ${minWait}
     Click Element    ${CM_ActionBn}
-    Sleep    ${maxWait}
-    Click Element    xpath:(//*[contains(text(),'Edit')])[2]    
-    # Click Element    ${CM_CompanyInfobn}    
+    Set Window Size    1024    768    
+ 
+    Sleep    ${maxWait}        
+    Click Element    ${CM_CompanyInfobn}    
     # Sleep    ${minWait}
     # # Close Window
     # Input Text    ${CM_ProjectName_loc}    ${CM_Project_data}
