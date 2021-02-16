@@ -37,7 +37,7 @@ Add Company in Company Master
     Input Text    ${CM_CompanyNameInSearch_loc}    ${CM_CompanyNameInSearch_data}
     Sleep    ${minWait}
     Click Element    ${CM_SearchBn}    
-    Sleep    ${minWait}
+    Sleep    ${maxWait}
     # Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
     # Sleep    ${minWait}
     Click Element    ${CM_ActionBn}
