@@ -12,4 +12,5 @@ Login As Admin
     Maximize Browser Window
     Input Text    ${AdminUsername_loc}    ${AdminUsername_data}
     Input Password    ${AdminPassword_loc}    ${AdminPassword_data}    
-    Click Element    ${LoginButton}        
+    Click Element    ${LoginButton}
+    Set Window Size    1024    768         

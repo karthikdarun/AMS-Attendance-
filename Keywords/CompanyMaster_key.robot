@@ -41,7 +41,7 @@ Add Company in Company Master
     # Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
     # Sleep    ${minWait}
     Click Element    ${CM_ActionBn}
-    Set Window Size    1024    768    
+       
  
     Sleep    ${maxWait}        
     Click Element    ${CM_CompanyInfobn}    
