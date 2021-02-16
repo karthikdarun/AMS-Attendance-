@@ -42,27 +42,27 @@ Add Company in Company Master
     # Sleep    ${minWait}
     Click Element    ${CM_ActionBn}
     Sleep    ${maxWait}
-    Sleep    ${maxWait}
-    Click Element    ${CM_CompanyInfobn}    
-    Sleep    ${minWait}
-    # Close Window
-    Input Text    ${CM_ProjectName_loc}    ${CM_Project_data}
-    Click Element    ${CM_ProjectSavebn}    
-    Click Element    ${Okbutton}    
-    Element Text Should Be    ${CM_ProjectGrid}    ${CM_VerifyProjectName_data}    
-    Click Element    ${CM_ProjectGrid}    
-    Sleep    ${minWait}
-    Input Text    ${CM_SiteName_loc}    ${CM_Site_data}    
-    Click Element    ${CM_SiteSavebn}    
-    Click Element    ${Okbutton}    
-    Element Text Should Be    ${CM_SiteGrid}    ${CM_VerifySiteName_data}  
-    Sleep    ${minWait}
-    Click Element    ${UM_backbutton_loc}
-    Sleep    ${minWait}
-    Click Element    ${Logout1_loc}    
-    Sleep    ${minWait}
-    Click Element    ${Logout2_loc} 
-    Sleep    ${minWait}
-    Close Browser   
+    Click Element    xpath:(//*[contains(text(),'Edit')])[2]    
+    # Click Element    ${CM_CompanyInfobn}    
+    # Sleep    ${minWait}
+    # # Close Window
+    # Input Text    ${CM_ProjectName_loc}    ${CM_Project_data}
+    # Click Element    ${CM_ProjectSavebn}    
+    # Click Element    ${Okbutton}    
+    # Element Text Should Be    ${CM_ProjectGrid}    ${CM_VerifyProjectName_data}    
+    # Click Element    ${CM_ProjectGrid}    
+    # Sleep    ${minWait}
+    # Input Text    ${CM_SiteName_loc}    ${CM_Site_data}    
+    # Click Element    ${CM_SiteSavebn}    
+    # Click Element    ${Okbutton}    
+    # Element Text Should Be    ${CM_SiteGrid}    ${CM_VerifySiteName_data}  
+    # Sleep    ${minWait}
+    # Click Element    ${UM_backbutton_loc}
+    # Sleep    ${minWait}
+    # Click Element    ${Logout1_loc}    
+    # Sleep    ${minWait}
+    # Click Element    ${Logout2_loc} 
+    # Sleep    ${minWait}
+    # Close Browser   
     
      
