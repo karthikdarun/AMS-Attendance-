@@ -13,27 +13,27 @@ Resource    ../Testdata/Common_data.robot
 Add Company in Company Master
     Click Element    ${CompanyMaster_menu}
     Sleep    ${minWait}
-    # Click Element    ${CM_addbutton}    
-    # Input Text    ${CM_Companyname_loc}    ${CM_Companyname_data}    
-    # Input Text    ${CM_contactname_loc}    ${CM_contactname_data}
-    # Input Text    ${CM_MobNumber_loc}    ${CM_MobNumber_data}
-    # Input Text    ${CM_PhoneNumber_loc}    ${CM_PhoneNumber_data}
-    # Input Text    ${CM_Emailid_loc}    ${CM_Emailid_data}
-    # Input Text    ${CM_Website_loc}    ${CM_Website_data}
+    Click Element    ${CM_addbutton}    
+    Input Text    ${CM_Companyname_loc}    ${CM_Companyname_data}    
+    Input Text    ${CM_contactname_loc}    ${CM_contactname_data}
+    Input Text    ${CM_MobNumber_loc}    ${CM_MobNumber_data}
+    Input Text    ${CM_PhoneNumber_loc}    ${CM_PhoneNumber_data}
+    Input Text    ${CM_Emailid_loc}    ${CM_Emailid_data}
+    Input Text    ${CM_Website_loc}    ${CM_Website_data}
        
-    # Input Text    ${CM_Address1_loc}    ${CM_Address1_data} 
-    # Input Text    ${CM_Address2_loc}    ${CM_Address2_data}  
-    # Input Text    ${CM_Address3_loc}    ${CM_Address3_data}    
-    # Input Text    ${CM_BillingAddress1_loc}    ${CM_BillingAddress1_data}    
-    # Input Text    ${CM_BillingAddress2_loc}    ${CM_BillingAddress2_data}    
-    # Input Text    ${CM_BillingAddress3_loc}    ${CM_BillingAddress3_data}
-    # Execute Javascript    window.scrollBy(900,900)     
-    # Sleep    ${minWait}   
-    # Click Element    ${CM_SaveBn}    
-    # Click Element    ${Okbutton}
-    # Sleep    ${minWait}
-    # Click Element    ${UM_backbutton_loc}        
-    # Sleep    ${maxWait}
+    Input Text    ${CM_Address1_loc}    ${CM_Address1_data} 
+    Input Text    ${CM_Address2_loc}    ${CM_Address2_data}  
+    Input Text    ${CM_Address3_loc}    ${CM_Address3_data}    
+    Input Text    ${CM_BillingAddress1_loc}    ${CM_BillingAddress1_data}    
+    Input Text    ${CM_BillingAddress2_loc}    ${CM_BillingAddress2_data}    
+    Input Text    ${CM_BillingAddress3_loc}    ${CM_BillingAddress3_data}
+    Execute Javascript    window.scrollBy(900,900)     
+    Sleep    ${minWait}   
+    Click Element    ${CM_SaveBn}    
+    Click Element    ${Okbutton}
+    Sleep    ${minWait}
+    Click Element    ${UM_backbutton_loc}        
+    Sleep    ${maxWait}
     Input Text    ${CM_CompanyNameInSearch_loc}    ${CM_CompanyNameInSearch_data}
     Sleep    ${minWait}
     Click Element    ${CM_SearchBn}    
