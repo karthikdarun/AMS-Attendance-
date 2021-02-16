@@ -42,6 +42,7 @@ Add Company in Company Master
     # Sleep    ${minWait}
     Click Element    ${CM_ActionBn}
     Sleep    ${maxWait}
+    Sleep    ${maxWait}
     Click Element    ${CM_CompanyInfobn}    
     Sleep    ${minWait}
     # Close Window
