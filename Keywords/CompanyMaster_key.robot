@@ -38,12 +38,10 @@ Add Company in Company Master
     Sleep    ${minWait}
     Click Element    ${CM_SearchBn}    
     Sleep    ${minWait}
-    Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
-    Sleep    ${minWait}
+    # Element Text Should Be    ${CM_CompanyNameInGrid_loc}    ${CM_CompanyNameInGrid_data} 
+    # Sleep    ${minWait}
     Click Element    ${CM_ActionBn}
     Sleep    ${minWait}
-    Set Focus To Element    ${CM_CompanyInfobn}
-    Wait Until Element Is Visible    ${CM_CompanyInfobn}    
     Click Element    ${CM_CompanyInfobn}    
     Sleep    ${minWait}
     # Close Window
