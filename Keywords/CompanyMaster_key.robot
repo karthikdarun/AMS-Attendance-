@@ -11,6 +11,8 @@ Resource    ../Testdata/Common_data.robot
 
 
 Add Company in Company Master
+    Set Window Size    1920    1080
+    Sleep    ${minWait}
     Click Element    ${CompanyMaster_menu}
     Sleep    ${minWait}
     # Click Element    ${CM_addbutton}    
