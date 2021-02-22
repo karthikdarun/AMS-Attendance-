@@ -44,9 +44,10 @@ Add Company in Company Master
     # Sleep    ${minWait}
     # Set Window Size    1920    1080
     Click Element    ${CM_ActionBn}
-    Set Window Size    1382    744      
- 
-    Sleep    ${maxWait}        
+    Set Window Size    1382    744
+    Sleep    ${minWait}
+    Scroll Element Into View    ${CM_CompanyInfobn}
+    Sleep    ${minWait}        
     Press Keys    ${CM_CompanyInfobn}    RETURN    
     # Sleep    ${minWait}
     # # Close Window

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210218 23:00:26.671" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210222 14:07:29.848" rpa="false">
 <suite id="s1" name="AMS" source="C:\Python Automation\AMS">
 <suite id="s1-s1" name="Tests" source="C:\Python Automation\AMS\Tests">
 <suite id="s1-s1-s1" name="TC 3 CompanyMaster tc" source="C:\Python Automation\AMS\Tests\TC_3_CompanyMaster_tc.robot">
@@ -10,8 +10,8 @@
 <arguments>
 <arg>${maxWait}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:31.125" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210218 23:00:27.120" endtime="20210218 23:00:31.126"></status>
+<msg timestamp="20210222 14:07:36.313" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210222 14:07:32.303" endtime="20210222 14:07:36.315"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -19,19 +19,19 @@
 <arg>${Appurl}</arg>
 <arg>${broswer}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:31.130" level="INFO">Opening browser 'Chrome' to base url 'http://muthucsm-001-site11.btempurl.com/'.</msg>
-<status status="PASS" starttime="20210218 23:00:31.127" endtime="20210218 23:00:45.136"></status>
+<msg timestamp="20210222 14:07:36.319" level="INFO">Opening browser 'Chrome' to base url 'http://muthucsm-001-site11.btempurl.com/'.</msg>
+<status status="PASS" starttime="20210222 14:07:36.316" endtime="20210222 14:08:19.872"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${BrowserWait}</arg>
 </arguments>
-<status status="PASS" starttime="20210218 23:00:45.137" endtime="20210218 23:00:45.142"></status>
+<status status="PASS" starttime="20210222 14:08:19.873" endtime="20210222 14:08:19.887"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210218 23:00:45.143" endtime="20210218 23:00:47.326"></status>
+<status status="PASS" starttime="20210222 14:08:19.888" endtime="20210222 14:08:22.375"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -39,8 +39,8 @@
 <arg>${AdminUsername_loc}</arg>
 <arg>${AdminUsername_data}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:47.330" level="INFO">Typing text 'karthik' into text field '//*[@id='TxtUserName']'.</msg>
-<status status="PASS" starttime="20210218 23:00:47.327" endtime="20210218 23:00:47.535"></status>
+<msg timestamp="20210222 14:08:22.378" level="INFO">Typing text 'karthik' into text field '//*[@id='TxtUserName']'.</msg>
+<status status="PASS" starttime="20210222 14:08:22.376" endtime="20210222 14:08:23.087"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -48,20 +48,20 @@
 <arg>${AdminPassword_loc}</arg>
 <arg>${AdminPassword_data}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:47.536" level="INFO">Typing password into text field '//*[@id='TxtPassword']'.</msg>
-<msg timestamp="20210218 23:00:47.621" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20210218 23:00:47.714" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20210218 23:00:47.535" endtime="20210218 23:00:47.714"></status>
+<msg timestamp="20210222 14:08:23.089" level="INFO">Typing password into text field '//*[@id='TxtPassword']'.</msg>
+<msg timestamp="20210222 14:08:23.191" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210222 14:08:23.271" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210222 14:08:23.088" endtime="20210222 14:08:23.271"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${LoginButton}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:47.715" level="INFO">Clicking element '//*[@onclick='Login()']'.</msg>
-<status status="PASS" starttime="20210218 23:00:47.715" endtime="20210218 23:00:47.781"></status>
+<msg timestamp="20210222 14:08:23.273" level="INFO">Clicking element '//*[@onclick='Login()']'.</msg>
+<status status="PASS" starttime="20210222 14:08:23.272" endtime="20210222 14:08:23.375"></status>
 </kw>
-<status status="PASS" starttime="20210218 23:00:27.119" endtime="20210218 23:00:47.782"></status>
+<status status="PASS" starttime="20210222 14:07:32.300" endtime="20210222 14:08:23.376"></status>
 </kw>
 <kw name="Add Company in Company Master" library="CompanyMaster_key">
 <kw name="Set Window Size" library="SeleniumLibrary">
@@ -70,31 +70,31 @@
 <arg>1920</arg>
 <arg>1080</arg>
 </arguments>
-<status status="PASS" starttime="20210218 23:00:47.785" endtime="20210218 23:00:48.042"></status>
+<status status="PASS" starttime="20210222 14:08:23.378" endtime="20210222 14:08:23.632"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${minWait}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:50.053" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210218 23:00:48.043" endtime="20210218 23:00:50.055"></status>
+<msg timestamp="20210222 14:08:25.644" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210222 14:08:23.633" endtime="20210222 14:08:25.646"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CompanyMaster_menu}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:50.059" level="INFO">Clicking element '//*[contains(text(),'Company Master')]'.</msg>
-<status status="PASS" starttime="20210218 23:00:50.056" endtime="20210218 23:00:53.458"></status>
+<msg timestamp="20210222 14:08:25.655" level="INFO">Clicking element '//*[contains(text(),'Company Master')]'.</msg>
+<status status="PASS" starttime="20210222 14:08:25.649" endtime="20210222 14:08:31.286"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${minWait}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:55.485" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210218 23:00:53.460" endtime="20210218 23:00:55.486"></status>
+<msg timestamp="20210222 14:08:33.298" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210222 14:08:31.288" endtime="20210222 14:08:33.300"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -102,48 +102,71 @@
 <arg>${CM_CompanyNameInSearch_loc}</arg>
 <arg>${CM_CompanyNameInSearch_data}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:55.494" level="INFO">Typing text 'TestingCompany_504' into text field 'xpath://*[@id='TxtSearchCompanyName']'.</msg>
-<status status="PASS" starttime="20210218 23:00:55.489" endtime="20210218 23:00:55.769"></status>
+<msg timestamp="20210222 14:08:33.305" level="INFO">Typing text 'TestingCompany_504' into text field 'xpath://*[@id='TxtSearchCompanyName']'.</msg>
+<status status="PASS" starttime="20210222 14:08:33.302" endtime="20210222 14:08:35.371"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${minWait}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:57.774" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210218 23:00:55.770" endtime="20210218 23:00:57.776"></status>
+<msg timestamp="20210222 14:08:37.385" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210222 14:08:35.373" endtime="20210222 14:08:37.387"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CM_SearchBn}</arg>
 </arguments>
-<msg timestamp="20210218 23:00:57.781" level="INFO">Clicking element 'xpath://*[@id='btnCompanySearch']'.</msg>
-<status status="PASS" starttime="20210218 23:00:57.778" endtime="20210218 23:00:57.945"></status>
+<msg timestamp="20210222 14:08:37.392" level="INFO">Clicking element 'xpath://*[@id='btnCompanySearch']'.</msg>
+<status status="PASS" starttime="20210222 14:08:37.389" endtime="20210222 14:08:37.559"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${maxWait}</arg>
 </arguments>
-<msg timestamp="20210218 23:01:01.955" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210218 23:00:57.947" endtime="20210218 23:01:01.956"></status>
+<msg timestamp="20210222 14:08:41.576" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210222 14:08:37.560" endtime="20210222 14:08:41.578"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${CM_ActionBn}</arg>
 </arguments>
-<msg timestamp="20210218 23:01:01.960" level="INFO">Clicking element 'xpath://*[@id='Companygrid']/tbody/tr/td[8]'.</msg>
-<status status="PASS" starttime="20210218 23:01:01.957" endtime="20210218 23:01:02.118"></status>
+<msg timestamp="20210222 14:08:41.582" level="INFO">Clicking element 'xpath://*[@id='Companygrid']/tbody/tr/td[8]'.</msg>
+<status status="PASS" starttime="20210222 14:08:41.579" endtime="20210222 14:08:41.770"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1382</arg>
+<arg>744</arg>
+</arguments>
+<status status="PASS" starttime="20210222 14:08:41.771" endtime="20210222 14:08:41.912"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>${maxWait}</arg>
+<arg>${minWait}</arg>
 </arguments>
-<msg timestamp="20210218 23:01:06.134" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210218 23:01:02.120" endtime="20210218 23:01:06.135"></status>
+<msg timestamp="20210222 14:08:43.918" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210222 14:08:41.913" endtime="20210222 14:08:43.919"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${CM_CompanyInfobn}</arg>
+</arguments>
+<status status="PASS" starttime="20210222 14:08:43.921" endtime="20210222 14:08:44.317"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${minWait}</arg>
+</arguments>
+<msg timestamp="20210222 14:08:46.334" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210222 14:08:44.319" endtime="20210222 14:08:46.336"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -151,20 +174,20 @@
 <arg>${CM_CompanyInfobn}</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20210218 23:01:06.139" level="INFO">Sending key(s) ('RETURN',) to xpath:(//*[contains(text(),'Company Info')])[2] element.</msg>
-<msg timestamp="20210218 23:01:06.606" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20210218 23:01:06.608" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20210218 23:01:06.136" endtime="20210218 23:01:06.674"></status>
+<msg timestamp="20210222 14:08:46.342" level="INFO">Sending key(s) ('RETURN',) to xpath:(//*[contains(text(),'Company Info')])[2] element.</msg>
+<msg timestamp="20210222 14:08:46.682" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210222 14:08:46.684" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210222 14:08:46.338" endtime="20210222 14:08:46.725"></status>
 </kw>
-<status status="PASS" starttime="20210218 23:00:47.783" endtime="20210218 23:01:06.676"></status>
+<status status="PASS" starttime="20210222 14:08:23.376" endtime="20210222 14:08:46.730"></status>
 </kw>
-<status status="PASS" starttime="20210218 23:00:27.117" endtime="20210218 23:01:06.678" critical="yes"></status>
+<status status="PASS" starttime="20210222 14:07:32.296" endtime="20210222 14:08:46.733" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210218 23:00:26.759" endtime="20210218 23:01:06.686"></status>
+<status status="PASS" starttime="20210222 14:07:30.439" endtime="20210222 14:08:46.740"></status>
 </suite>
-<status status="PASS" starttime="20210218 23:00:26.750" endtime="20210218 23:01:06.696"></status>
+<status status="PASS" starttime="20210222 14:07:30.430" endtime="20210222 14:08:46.755"></status>
 </suite>
-<status status="PASS" starttime="20210218 23:00:26.710" endtime="20210218 23:01:06.707"></status>
+<status status="PASS" starttime="20210222 14:07:30.341" endtime="20210222 14:08:46.764"></status>
 </suite>
 <statistics>
 <total>
